@@ -1,5 +1,8 @@
 # How It Works 
 
+<img width="2936" height="1426" alt="image" src="https://github.com/user-attachments/assets/3cc46b9a-d75e-426b-bd72-89320f95f813" />
+
+
  Core Functionality
 
 1. **Enter a URL**
@@ -20,6 +23,8 @@
    - A stats section shows the **click count per URL**.
 
 ---
+<img width="2936" height="1426" alt="image" src="https://github.com/user-attachments/assets/d1a21ec4-23db-4acd-8e06-1323e77cafb1" />
+
 
 ##  UI Details
 
@@ -47,5 +52,8 @@
 - **Custom Logging Middleware** (Tracks app events)
 
 ---
+
+
+<img width="2936" height="1426" alt="image" src="https://github.com/user-attachments/assets/b467f1ea-6006-4c99-a6ea-95864a579777" />
 
 

@@ -1,9 +1,5 @@
 # How It Works 
 
-This document explains how the **React URL Shortener App** works.
-
----
-
  Core Functionality
 
 1. **Enter a URL**

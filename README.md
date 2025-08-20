@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# How It Works 🛠
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This document explains how the **React URL Shortener App** works.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+ Core Functionality
 
-### `npm start`
+1. **Enter a URL**
+   - The user enters a long URL into the input field.
+   - Optionally, the user can provide a **custom shortcode**.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+2. **Generate Short URL**
+   - The app creates a shortened URL.
+   - If a custom shortcode is provided, it is used.  
+   - Otherwise, a random string is generated.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+3. **Save & Display**
+   - The shortened URL is saved in the app’s local state (no backend).
+   - All shortened URLs are displayed in a list with their original links.
 
-### `npm test`
+4. **Analytics**
+   - The app tracks the number of times each shortened link is clicked.
+   - A stats section shows the **click count per URL**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+##  UI Details
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Material UI** is used for input fields, buttons, and cards.
+- **React Router** manages navigation between:
+  - Home (`/`) → URL Shortener form and list.
+  - Stats (`/stats`) → Analytics dashboard.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##  Workflow
 
-### `npm run eject`
+1. User enters a long URL (and optional shortcode).  
+2. App shortens it and displays the new link.  
+3. When the shortened link is clicked, the app redirects to the original URL.  
+4. Each click is counted and shown in the Stats page.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##  Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- **React** (Frontend framework)
+- **React Router DOM** (Page navigation)
+- **Material UI** (UI components & styling)
+- **Custom Logging Middleware** (Tracks app events)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+✅ That’s it! The app is **fully client-side** and does not use a backend. All data is managed within the React state.

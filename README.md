@@ -1,4 +1,4 @@
-# How It Works 🛠
+# How It Works 
 
 This document explains how the **React URL Shortener App** works.
 
@@ -52,4 +52,4 @@ This document explains how the **React URL Shortener App** works.
 
 ---
 
-✅ That’s it! The app is **fully client-side** and does not use a backend. All data is managed within the React state.
+
